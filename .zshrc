@@ -5,7 +5,7 @@
 export ZSH="$HOME/.oh-my-zsh"
 
 # Path to completition dump file
-export ZSH_COMPDUMP="$ZSH/cache/.zcompdump-${SHORT_HOST}-${ZSH_VERSION}"
+export ZSH_COMPDUMP="$ZSH/cache/.zcompdump-${USER}-${HOST}-${ZSH_VERSION}"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
