@@ -7,6 +7,10 @@ export ZSH="$HOME/.oh-my-zsh"
 # Path to completition dump file
 export ZSH_COMPDUMP="$ZSH/cache/.zcompdump-${USER}-${HOST}-${ZSH_VERSION}"
 
+# Setting paths to zsh files
+# HISTFILE="$XDG_STATE_HOME"/zsh/history
+# ZSH_CACHE_DIR="$XDG_CACHE_HOME"/zsh
+
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -68,12 +72,14 @@ HIST_STAMPS="yyyy-mm-dd"
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
+# Setup fzf before being sourcing oh-my-zsh
+# export FZF_BASE=
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(colored-man-pages tmux)
+plugins=(colored-man-pages fzf tmux)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -95,18 +101,31 @@ fi
 # export ARCHFLAGS="-arch x86_64"
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
+# plugins, and themes. Aliases can be placed here, but they are mainly
+# defined within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 
-# Plugins and themes
+# Plugins and themes.
+# Add spicetify to path.
 export PATH=$PATH:/home/guilherme/.spicetify
 
+# Set up zsh syntax highlight.
 ZSH_HIGHLIGHT_HIGHLIGHTERS=(main cursor)
 typeset -gA ZSH_HIGHLIGHT_STYLES
 
+# Set up catppuccin syntax highlight for zsh.
 source ~/.zsh/catppuccin_mocha-zsh-syntax-highlighting.zsh
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+# Set up zoxide, a smarted cd.
 eval "$(zoxide init zsh)"
 
+# Set up fzf keybindings
+# CTRL-/ to toggle small preview window to see the full command
+# CTRL-Y to copy the command into clipboard using pbcopy
+export FZF_CTRL_R_OPTS="
+  --preview 'echo {}' --preview-window up:3:hidden:wrap
+  --bind 'ctrl-/:toggle-preview'
+  --bind 'ctrl-y:execute-silent(echo -n {2..} | pbcopy)+abort'
+  --color header:italic
+  --header 'Press CTRL-Y to copy command into clipboard'"
