@@ -79,7 +79,7 @@ HIST_STAMPS="yyyy-mm-dd"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(colored-man-pages fzf tmux)
+plugins=(aliases alias-finder common-aliases colored-man-pages fzf tmux)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -114,7 +114,7 @@ ZSH_HIGHLIGHT_HIGHLIGHTERS=(main cursor)
 typeset -gA ZSH_HIGHLIGHT_STYLES
 
 # Set up catppuccin syntax highlight for zsh.
-source ~/.zsh/catppuccin_mocha-zsh-syntax-highlighting.zsh
+source ~/.config/zsh/catppuccin_mocha-zsh-syntax-highlighting.zsh
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Set up zoxide, a smarted cd.
