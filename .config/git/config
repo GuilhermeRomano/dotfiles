@@ -36,3 +36,9 @@
 	hunk-header-style = file line-number syntax
 [diff]
 	colorMoved = default
+[transfer]
+	fsckObjects = true
+[fetch]
+	fsckObjects = true
+[receive]
+	fsckObjects = true
