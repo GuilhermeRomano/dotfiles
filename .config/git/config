@@ -12,3 +12,5 @@
 	conflictStyle = zdiff3
 [rebase]
 	autosquash = true
+[commit]
+	verbose = true
