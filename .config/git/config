@@ -8,3 +8,7 @@
 	editor = nvim
 [init]
 	defaultBranch = main
+[merge]
+	conflictStyle = zdiff3
+[rebase]
+	autosquash = true
