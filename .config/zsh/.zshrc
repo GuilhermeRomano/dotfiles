@@ -5,11 +5,11 @@
 export ZSH="$HOME/.oh-my-zsh"
 
 # Path to completition dump file
-export ZSH_COMPDUMP="$ZSH/cache/.zcompdump-${USER}-${HOST}-${ZSH_VERSION}"
+# export ZSH_COMPDUMP="$ZSH/cache/.zcompdump-${USER}-${HOST}-${ZSH_VERSION}"
 
-# Setting paths to zsh files
-# HISTFILE="$XDG_STATE_HOME"/zsh/history
-# ZSH_CACHE_DIR="$XDG_CACHE_HOME"/zsh
+# Setting paths to zsh folders
+HISTFILE="$XDG_STATE_HOME"/zsh/history
+ZSH_CACHE_DIR="$XDG_CACHE_HOME"/zsh
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -117,7 +117,7 @@ typeset -gA ZSH_HIGHLIGHT_STYLES
 source ~/.config/zsh/catppuccin_mocha-zsh-syntax-highlighting.zsh
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-# Set up zoxide, a smarted cd.
+# Set up zoxide, a smarter cd.
 eval "$(zoxide init zsh)"
 
 # Set up fzf keybindings
