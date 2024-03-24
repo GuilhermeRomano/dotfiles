@@ -8,5 +8,3 @@ export XDG_CACHE_HOME=$HOME/.cache
 export XDG_DATA_HOME=$HOME/.local/share
 export XDG_STATE_HOME=$HOME/.local/state
 
-# W3M
-export W3M_DIR="$XDG_STATE_HOME/w3m"
