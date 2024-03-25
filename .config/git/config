@@ -1,44 +1,44 @@
 [user]
-	email = guilherme.vinicius121@gmail.com
-	name = Guilherme Romano
+    email = guilherme.vinicius121@gmail.com
+    name = Guilherme Romano
 [credential "https://github.com"]
-	helper = 
-	helper = !/usr/bin/gh auth git-credential
+    helper = 
+    helper = !/usr/bin/gh auth git-credential
 [core]
-	editor = nvim
-	pager = delta
+    editor = nvim
+    pager = delta
 [init]
-	defaultBranch = main
+    defaultBranch = main
 [merge]
-	conflictStyle = zdiff3
+    conflictStyle = zdiff3
 [rebase]
-	autosquash = true
+    autosquash = true
 [commit]
-	verbose = true
+    verbose = true
 [help]
-	autocorrect = prompt
+    autocorrect = prompt
 [interactive]
-	diffFilter = delta --color-only --features=interactive
+    diffFilter = delta --color-only --features=interactive
 [delta]
-	navigate = true
-	side-by-side = true
-	line-numbers = true
-	features = decorations
+    navigate = true
+    side-by-side = true
+    line-numbers = true
+    features = decorations
 [delta "interactive"]
-	keep-plus-minus-markers = false
+    keep-plus-minus-markers = false
 [delta "decorations"]
-	commit-decoration-style = blue ol
-	commit-style = raw
-	file-style = omit
-	hunk-header-decoration-style = blue box
-	hunk-header-file-style = red
-	hunk-header-line-number-style = "#067a00"
-	hunk-header-style = file line-number syntax
+    commit-decoration-style = blue ol
+    commit-style = raw
+    file-style = omit
+    hunk-header-decoration-style = blue box
+    hunk-header-file-style = red
+    hunk-header-line-number-style = "#067a00"
+    hunk-header-style = file line-number syntax
 [diff]
-	colorMoved = default
+    colorMoved = default
 [transfer]
-	fsckObjects = true
+    fsckObjects = true
 [fetch]
-	fsckObjects = true
+    fsckObjects = true
 [receive]
-	fsckObjects = true
+    fsckObjects = true
