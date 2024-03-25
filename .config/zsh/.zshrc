@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="$HOME/.oh-my-zsh"
+export ZSH="$XDG_DATA_HOME/oh-my-zsh"
 
 # Setting paths to zsh folders
 HISTFILE="$XDG_STATE_HOME"/zsh/history
