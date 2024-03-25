@@ -2,13 +2,13 @@
 root = true
 
 # Unix-style newlines with a newline ending every file
+# default charset to be utf-8
 [*]
 end_of_line = lf
 insert_final_newline = true
 charset = utf-8
 
-# Matches multiple files with brace expansion notation
-# Set default charset
+# Configures git config file
 [config]
 indent_style = space
 indent_size = 4
