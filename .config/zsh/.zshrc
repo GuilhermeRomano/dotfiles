@@ -4,9 +4,6 @@
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
-# Path to completition dump file
-# export ZSH_COMPDUMP="$ZSH/cache/.zcompdump-${USER}-${HOST}-${ZSH_VERSION}"
-
 # Setting paths to zsh folders
 HISTFILE="$XDG_STATE_HOME"/zsh/history
 ZSH_CACHE_DIR="$XDG_CACHE_HOME"/zsh
@@ -104,9 +101,14 @@ fi
 # export ARCHFLAGS="-arch x86_64"
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, but they are mainly
-# defined within the ZSH_CUSTOM folder.
+# plugins, and themes. Aliases can be placed here, or in the ZSH_CUSTOM
+# folder, but they are mainly defined within the aliases.zsh file.
 # For a full list of active aliases, run `alias`.
+if [ -f $ZDOTDIR/aliases.zsh ]; then
+  source $ZDOTDIR/aliases.zsh
+else
+  print "Aliases file not found."
+fi
 
 # Plugins and themes.
 # Add spicetify to path.
