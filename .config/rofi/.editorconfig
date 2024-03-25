@@ -1,0 +1,15 @@
+# top-most EditorConfig file
+root = true
+
+# Unix-style newlines with a newline ending every file
+# default charset to be utf-8
+[*]
+end_of_line = lf
+insert_final_newline = true
+charset = utf-8
+
+# Configure rofi .rasi files
+[*.rasi]
+indent_style = space
+indent_size = 4
+
