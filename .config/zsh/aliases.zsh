@@ -6,9 +6,9 @@ unalias l
 unalias la
 
 # ls alias
-alias ls='exa --group-directories-first --icons --all --across'
-alias ll='exa --group-directories-first --icons --all --long --header'
-alias tree='exa --group-directories-first --icons --all --tree --level=2'
+alias ls='eza --group-directories-first --icons --all --across'
+alias ll='eza --group-directories-first --icons --all --long --header'
+alias tree='eza --group-directories-first --icons --all --tree --level=2'
 
 # other utilities alias
 alias vim='nvim'
