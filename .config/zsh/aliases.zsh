@@ -31,6 +31,12 @@ alias protontricks-launch='flatpak run --command=protontricks-launch com.github.
 # w3m
 alias w3m='w3m -config ~/.config/w3m/config'
 
+# wget
+alias wget=wget --hsts-file="$XDG_DATA_HOME/wget-hsts"
+
+# ranger
+alias ranger=". ranger"
+
 # set apt to call nala instead
 apt() { 
   command nala "$@"
