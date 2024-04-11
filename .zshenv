@@ -13,3 +13,7 @@ export CUDA_CACHE_PATH="$XDG_CACHE_HOME"/nv
 
 # GTK 2
 export GTK2_RC_FILES="$XDG_CONFIG_HOME/gtk-2.0/gtkrc":"$XDG_CONFIG_HOME/gtk-2.0/gtkrc.mine"
+
+# Cargo
+export CARGO_HOME="$XDG_DATA_HOME"/cargo
+export PATH=$PATH:$CARGO_HOME/bin
