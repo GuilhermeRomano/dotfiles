@@ -122,9 +122,6 @@ typeset -gA ZSH_HIGHLIGHT_STYLES
 source ~/.config/zsh/catppuccin_mocha-zsh-syntax-highlighting.zsh
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-# Set up zoxide, a smarter cd.
-eval "$(zoxide init zsh)"
-
 # Set up fzf keybindings
 # CTRL-/ to toggle small preview window to see the full command
 # CTRL-Y to copy the command into clipboard using pbcopy
