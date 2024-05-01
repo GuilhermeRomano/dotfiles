@@ -114,6 +114,9 @@ fi
 # Add spicetify to path.
 export PATH=$PATH:/home/guilherme/.spicetify
 
+# Add Golang go to path.
+export PATH="$HOME/go/bin:$PATH"
+
 # Set up zsh syntax highlight.
 ZSH_HIGHLIGHT_HIGHLIGHTERS=(main cursor)
 typeset -gA ZSH_HIGHLIGHT_STYLES
