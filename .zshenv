@@ -17,3 +17,12 @@ export GTK2_RC_FILES="$XDG_CONFIG_HOME/gtk-2.0/gtkrc":"$XDG_CONFIG_HOME/gtk-2.0/
 # Cargo
 export CARGO_HOME="$XDG_DATA_HOME"/cargo
 export PATH=$PATH:$CARGO_HOME/bin
+
+# dotnet
+export DOTNET_CLI_HOME="$XDG_DATA_HOME"/dotnet
+
+# GO
+export GOPATH="$XDG_DATA_HOME"/go
+
+# Icons
+export XCURSOR_PATH=/usr/share/icons:$XDG_DATA_HOME/icons
