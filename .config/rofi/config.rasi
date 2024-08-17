@@ -15,5 +15,5 @@ configuration{
     window-format: "{t}";
 }
 
-@theme "catppuccin-mocha"
+@theme "nord"
 
