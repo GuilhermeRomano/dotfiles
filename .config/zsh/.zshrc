@@ -79,7 +79,7 @@ HIST_STAMPS="yyyy-mm-dd"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(aliases alias-finder common-aliases colored-man-pages fzf tmux forgit)
+plugins=(aliases alias-finder common-aliases colored-man-pages fzf tmux)
 
 source $ZSH/oh-my-zsh.sh
 
