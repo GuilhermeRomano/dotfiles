@@ -26,3 +26,6 @@ export GOPATH="$XDG_DATA_HOME"/go
 
 # Icons
 export XCURSOR_PATH=/usr/share/icons:$XDG_DATA_HOME/icons
+
+# QT5
+export QT_QPA_PLATFORMTHEME="qt5ct"
