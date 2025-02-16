@@ -3,3 +3,6 @@
 
 # ignore generated files
 .config/conky/now-clocking/data/*
+
+# ignore tmux plugins folder
+.config/tmux/plugins/
