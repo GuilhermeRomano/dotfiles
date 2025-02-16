@@ -6,3 +6,7 @@
 
 # ignore tmux plugins folder
 .config/tmux/plugins/
+
+# ignore temp zsh files
+.config/zsh/.zcompdump-casandalee-5.9
+.config/zsh/.zcompdump-casandalee-5.9.zwc
