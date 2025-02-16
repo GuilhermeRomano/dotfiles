@@ -9,7 +9,7 @@ HISTFILE="$XDG_STATE_HOME"/zsh/history
 ZSH_CACHE_DIR="$XDG_CACHE_HOME"/zsh
 
 # Setting less histfile
-export LESSHISTFILE="$XDG_STATE_HOME"/less/history
+export LESSHISTFILE="$XDG_STATE_HOME"/lesshst
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
