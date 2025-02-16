@@ -1,2 +1,5 @@
 # ignore generated files
 *.json
+
+# ignore generated files
+.config/conky/now-clocking/data/*
