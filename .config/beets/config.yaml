@@ -1,0 +1,5 @@
+directory: ~/MEGA/music/musics/
+library: ~/MEGA/music/library.db
+import:
+    move: yes
+plugins: edit fetchart embedart fuzzy lastgenre lyrics mbsync missing parentwork spotify
